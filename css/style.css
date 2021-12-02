@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+*::selection {
+    color: white;
+    background-color: black;
+}
+header {
+    color: white;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient( #2a2a72 0%, #009ffd 99%);
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    height: 100px;
+    position:absolute;
+    bottom:0;
+    background-image: linear-gradient( #009ffd 0%, #2a2a72 99%);
+}
+
+footer a {
+    padding: 0px 30px;
+}
+
+nav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+nav div {
+    margin: 20px 40px;
+    animation: all alternate;
+    animation-duration: 1s;
+}
+
+nav div:hover h2 {
+    text-shadow: 0px 0px 2px black;
+}
+
+.dropdown_logo {
+    padding-right: 30px;
+} 
+
+.dropdown_content {
+    position: absolute;
+    background-color: inherit;
+}
+.dropdown h2 i {
+    animation: all alternate;
+    animation-duration: 1s;
+}
+
+.dropdown:hover .dropdown_content {
+    transform: rotateX(360deg);
+} 
+
+section {
+    margin: 0px 10%;
+    padding: 30px 30px 100px 30px;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lettrine {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    display: inline;
+    font-size: 4rem;
+}
+
+.hidden {
+    overflow: hidden;
+    opacity: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.med_icon {
+    font-size: 3rem;
+}
+
+
+
+
+.description p {
+    padding: 10px 0px;
+}
