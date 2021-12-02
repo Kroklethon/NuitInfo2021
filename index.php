@@ -10,24 +10,7 @@
 </head>
 <body>
   <div class="main">
-    <header class="centered"><h1>Les sauveteurs dunkerquois</h1></header>
-    <nav>
-      <div class="dropdown">
-        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="sauvetages.html">SAUVETAGES</a></h2>
-        <div class="dropdown_content hidden">
-          <p>Ajouter un nouveau sauvetage</p> 
-          <p>Suivre un sauvetag</p> 
-        </div>
-      </div>
-      <div class="dropdown">
-        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="sauveteurs.html">SAUVETEURS</a></h2>
-        <div class="dropdown_content hidden">
-          <p>Ajouter un sauveteur</p>
-          <p>Ajouter un naufragé</p>
-          <p>Ajouter un bateau</p>
-        </div>
-      </div>
-    </nav>
+    <?php include_once "../partials/header.php" ?>
     <section>
       <div class="description">
         <p><p class="lettrine">B</p>ienvenue sur le site des sauveteurs du dunkerquois</p>
@@ -35,10 +18,7 @@
         <p>Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe), ont participé à plus de 900 sauvetages en mer et plus de 1100 sauvetages individuels. Œuvrant avec courage, abnégation et souvent au mépris du risque ils méritent amplement que leurs actes soient pérennisés</p>
       </div>
     </section>
-    <footer class="centered">
-      <a href="https://www.facebook.com/groups/938396409644949"><i class="med_icon fab fa-facebook"></i></a>
-      <a href="http://boutelierphili1/"><i class="med_icon fab fa-twitter"></i></a>
-    </footer>
+    <?php include_once "../partials/footer.php" ?>
   </div>
 </body>
 <script src="js/main.js"></script>
