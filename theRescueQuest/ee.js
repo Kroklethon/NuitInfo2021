@@ -29,7 +29,7 @@ if (sessionStorage.getItem("rescueQuest") == 0 && Math.random() < 1) {
 		year = Math.round(Math.random() * (2021 - 1850) + 1850)
 		textToPrint.innerText = "Bonjour sauveteur des mers, vous voici en "+ year +" et nous avons recu un appel de detresse ! Rendez vous a la destination afin de sauver les naufrages ! Dans le message recu, nous avons pu entendre " + nbP + " personnes qui ont " + typeDetressText + ".";
 		eeBoat.appendChild(textToPrint)
-		urlToAim = window.location.origin + "/research.php"
+		urlToAim = window.location.origin + "/NuitInfo2021/?route=addSauvetage"
 		sessionStorage.setItem("rescueQuestCurrentAim",urlToAim)
 		sessionStorage.setItem("rescueQuestTypeDistress",typeDetress)
 	}
