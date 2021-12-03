@@ -99,5 +99,15 @@ a {
 }
 
 .description p {
-  padding: 10px 0px;
+    padding: 10px 0px;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+body{
+ background-color: white;
+ color: black;
 }
