@@ -6,7 +6,7 @@ if (sessionStorage.getItem("rescueQuest") == null) {
 	sessionStorage.setItem("rescueQuestCurrentAim",null)
 	sessionStorage.setItem("rescueQuestTypeDistress",null)
 }
-if (sessionStorage.getItem("rescueQuest") == 0 && Math.random() < 1) {
+if (sessionStorage.getItem("rescueQuest") == 0 && Math.random() < 0.1) {
 	// EE not started, so insert the boat if lucky
 	let eeBoat = document.createElement("div")
 	document.body.appendChild(eeBoat)
