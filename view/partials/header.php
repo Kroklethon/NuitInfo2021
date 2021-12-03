@@ -9,6 +9,7 @@
   <title>Sauveteur dunkerquois</title>
 </head>
 <body>
+  <button id="theme-btn">Thème sombre</button>
   <div class="main">
     <header class="centered"><h1>Les sauveteurs dunkerquois</h1></header>
     <nav>

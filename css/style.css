@@ -108,7 +108,10 @@ a {
     font-size: 3rem;
 }
 
-
+.dark{
+    background-color: black;
+    color: white;
+}
 
 
 .description p {
