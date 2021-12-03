@@ -15,15 +15,18 @@ window.addEventListener('load', function(){
 
     const dark_theme_class = 'dark';
 
+    if(sessionStorage.getItem('active') == 'true')
+        body.classList.add(dark_theme_class)
+
     toggle_btn.onclick = function(){
         console.log(Math.random());
         if (body.classList.contains(dark_theme_class)) {
-            console.log('erfob')
             body.classList.remove(dark_theme_class);
+            sessionStorage.removeItem('active')
         }
         else{
             body.classList.add('dark');
-            console.log('on ajoute')
+            sessionStorage.setItem('active', 'true')
         }
 
     };

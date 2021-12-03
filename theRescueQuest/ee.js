@@ -29,7 +29,7 @@ if (sessionStorage.getItem("rescueQuest") == 0 && Math.random() < 0.1) {
 		year = Math.round(Math.random() * (2021 - 1850) + 1850)
 		textToPrint.innerText = "Bonjour sauveteur des mers, vous voici en "+ year +" et nous avons recu un appel de detresse ! Rendez vous a la destination afin de sauver les naufrages ! Dans le message recu, nous avons pu entendre " + nbP + " personnes qui ont " + typeDetressText + ".";
 		eeBoat.appendChild(textToPrint)
-		urlToAim = window.location.origin + "/theRescueQuest/rescueQuestTest2.html?saved="+nbP+"&year="+year
+		urlToAim = window.location.origin + "/research.php"
 		sessionStorage.setItem("rescueQuestCurrentAim",urlToAim)
 		sessionStorage.setItem("rescueQuestTypeDistress",typeDetress)
 	}
@@ -124,12 +124,22 @@ else if ((sessionStorage.getItem("rescueQuest") == 3) && (window.location.href =
 	eeBoat.appendChild(svgBoat)
 	svgBoat.onclick = function() {
 		textToPrint = document.createElement("div")
-		textToPrint.innerHTML = "Vous avez reussi a sauver les naufrages ! Pour vous recompenser, voici votre \"decoration\" remise lors de votre \"<a href='https://www.youtube.com/watch?v=BuYf0taXoNw'>ceremonie des recompenses</a>\"";
+		textToPrint.innerHTML = "<div  style='float:left'>Vous avez reussi a sauver les naufrages ! Pour vous recompenser, voici votre \"</div><div id='deco' style='float:left'>decoration</div>\"<div style='float:left'> remise lors de votre \"<a href='https://www.youtube.com/watch?v=BuYf0taXoNw'>ceremonie des recompenses</a>\"</div>";
 		eeBoat.appendChild(textToPrint)
 		sessionStorage.setItem("rescueQuest",0)
 		sessionStorage.setItem("rescueQuestStart",null)
 		sessionStorage.setItem("rescueQuestCurrentAim",null)
 		sessionStorage.setItem("rescueQuestTypeDistress",null)
+		document.getElementById('deco').onclick = function () {
+			if (sessionStorage.getItem("decoMode") == null) {
+				return sessionStorage.setItem("decoMode","medalRewarded")
+			}
+			if (sessionStorage.getItem("decoMode") == "medalRewarded") {
+				sessionStorage.setItem("decoMode","medalRetired")
+			} else {
+				sessionStorage.setItem("decoMode","medalRewarded")
+			}
+		}
 	}
 }
 
