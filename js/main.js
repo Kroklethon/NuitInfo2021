@@ -13,19 +13,38 @@ window.addEventListener('load', function(){
 
     const body = document.querySelector('body');
 
-    const dark_theme_class = 'dark';
+    let dark_theme_class = 'dark';
+
+    if(sessionStorage.getItem('decoMode') == 'medalRewarded'){
+        dark_theme_class = 'marine'}
+    else
+        dark_theme_class = 'dark';
 
     if(sessionStorage.getItem('active') == 'true')
         body.classList.add(dark_theme_class)
+    else if(sessionStorage.getItem('decoMode') == 'medalRewarded' && sessionStorage.getItem('active') == null){
+        body.classList.add('gold')
+    }
+
+
+
 
     toggle_btn.onclick = function(){
         console.log(Math.random());
         if (body.classList.contains(dark_theme_class)) {
             body.classList.remove(dark_theme_class);
+            if(sessionStorage.getItem('decoMode') == 'medalRewarded'){
+                body.classList.add('gold')
+            }
             sessionStorage.removeItem('active')
         }
         else{
-            body.classList.add('dark');
+            if(sessionStorage.getItem('decoMode') == 'medalRewarded'){
+                dark_theme_class = 'marine'}
+            else
+                dark_theme_class = 'dark';
+            body.classList.add(dark_theme_class);
+            body.classList.remove('gold')
             sessionStorage.setItem('active', 'true')
         }
 
