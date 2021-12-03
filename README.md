@@ -23,7 +23,14 @@ Une navigation entre 5 page est disponible
 -> La page sauvetage
 
 # Mettez de l'intelligence dans votre moteur
-Non fait.
+Une barre de recherche optimisé pour l'écriture en language courant. Elle permet de créer des requêtes SQL avec des entrées plus simple.
+https://nuitinfo.thibault-millot.fr/?route=bot
+
+exemple : "Les naufrage du 23 aout"
+
+- Il y a encore de possible bug, il y a encore plusieur cas à prendre en compte (nombre de sauvée, gestion des dates dans la requête,...)
+- Il faut aussi gérer un dictionnaire permettant de lier des synonymes pour faciliter la création de requête.
+- La sortie est au format SQL, bien qu'il reste quelque amélioration/optimisation via les dictionnaires et il manques certaines tables à traités.
 
 # Un darkmode à la mode
 Un mode sombre est activable
