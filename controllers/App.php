@@ -8,3 +8,7 @@ class App {
 			(new $controller())->$action();		
 	}
 }
+
+function securise($value) {
+	return isset($value) && !empty($value);
+}

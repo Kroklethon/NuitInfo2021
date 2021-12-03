@@ -10,11 +10,23 @@
 </head>
 <body>
   <div class="main">
-    <?php include_once "../partials/header.php" ?>
     <section>
+      <?php
+        echo "<div class='column'>";
+        foreach($data as $sauveteur) {
+          echo "<div>";
+          $pers = Personne::one($sauveteur->id_personne);
+          echo "<p>".$pers->prenom."</p>";
+          echo "<p>".$pers->nom."</p>";
+          echo "<p>".$pers->date_naissance."</p>";
+          echo "<p>".$sauveteur->grade."</p>";
+          echo "</div>";
+        }
+        echo "</div>";
+        ?>
     </section>
-    <?php include_once "../partials/footer.php" ?>
   </div>
 </body> 
+<script src="theRescueQuest/ee.js"></script>
 <script src="js/main.js"></script>
 </html>

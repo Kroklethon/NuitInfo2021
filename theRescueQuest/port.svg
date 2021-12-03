@@ -1,0 +1,35 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <path transform="translate(-2.2314520147780286,1.8519991903430935) scale(0.005) translate(2.2314520147780286,-1.8519991903430935)" id="svg_3" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path transform="translate(993.5613484854292,1001.8553400732151) scale(0.005) translate(-993.5613484854292,-1001.8553400732151)" id="svg_4" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path transform="translate(4.084358559219027,7.115174668674001) scale(0.005) translate(-4.084358559219027,-7.115174668674001)" id="svg_5" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path transform="translate(372.5066420423823,405.0112408304904) scale(0.005) translate(-372.5066420423823,-405.0112408304904)" id="svg_6" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path transform="translate(372.5066420423823,405.0112408304904) scale(0.005) translate(-372.5066420423823,-405.0112408304904)" id="svg_7" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path transform="translate(381.98035790337804,429.22184803081257) scale(0.005) translate(-381.98035790337804,-429.22184803081257)" id="svg_8" d="m1,299l0,-298l298,298l-298,0z" opacity="NaN" fill="url(#svg_1)"/>
+  <path stroke="null" id="svg_2" d="m1.93738,999.69491l0,-993.36922l994.8426,993.36922l-994.8426,0z" opacity="NaN" fill="url(#svg_10)"/>
+  <ellipse ry="72.1055" rx="70.52655" id="svg_11" cy="241.32648" cx="117.76895" stroke="null" fill="url(#svg_13)"/>
+  <ellipse ry="72.1055" rx="70.52655" id="svg_14" cy="559.2223" cx="437.77002" stroke="null" fill="url(#svg_13)"/>
+  <ellipse ry="72.1055" rx="70.52655" id="svg_15" cy="863.43384" cx="724.08676" stroke="null" fill="url(#svg_13)"/>
+  <ellipse transform="rotate(46.1772 285.138 170.274)" ry="60.0002" rx="144.21101" id="svg_16" cy="170.27361" cx="285.13793" stroke="null" fill="url(#svg_18)"/>
+  <ellipse transform="rotate(46.1772 318.823 206.063)" stroke="null" ry="24.65739" rx="52.65788" id="svg_17" cy="206.06328" cx="318.82257" fill="#3B2F0E"/>
+ </g>
+ <defs>
+  <radialGradient spreadMethod="pad" id="svg_1">
+   <stop offset="0.3125" stop-color="#e9ff00"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#ff0000"/>
+  </radialGradient>
+  <linearGradient spreadMethod="pad" y2="0.35136" x2="0.57428" y1="1" x1="0" id="svg_10">
+   <stop stop-opacity="0.99609" offset="0.3125" stop-color="#c4c4c4"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#898989"/>
+  </linearGradient>
+  <linearGradient spreadMethod="pad" y2="1" x2="0" y1="1" x1="0" id="svg_13">
+   <stop stop-opacity="0.99609" offset="0.3125" stop-color="#c4c4c4"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#898989"/>
+  </linearGradient>
+  <radialGradient cy="0.50371" cx="0.50397" spreadMethod="pad" id="svg_18">
+   <stop offset="0.75397" stop-opacity="0.99609" stop-color="#e6c36a"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#9999ff"/>
+  </radialGradient>
+ </defs>
+</svg>

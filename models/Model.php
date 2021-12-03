@@ -14,6 +14,35 @@ class Model {
 
 	}
 
+	public static function auto_increment($table) {
+		global $db;
+		$stm = $db->prepare("SELECT Auto_increment FROM information_schema.tables WHERE table_name='$table';");
+		$stm->execute();	
+		return $stm->fetch(PDO::FETCH_ASSOC)['Auto_increment'];
+	}
+
+	public static function create($id=null) {
+		global $db;
+		$class = get_called_class(); 
+		$table = strtolower($class);
+		if ($id===null) {
+			$o = new $class();
+			// CREATE = INSERT
+			$stm = $db->prepare("insert into $table default values returning id_$table");
+			$stm->execute();
+			foreach($stm->fetch(PDO::FETCH_ASSOC) as $key=>$value) 
+				$o->$key = $value;
+			return $o;
+		} else {
+			// READ = SELECT
+			$stm = $db->prepare("select * from $table where id_$table=:id");
+			$stm->bindValue(":id", $id);
+			$stm->execute();
+			$row = $stm->fetch(PDO::FETCH_ASSOC);
+			foreach($row as $key=>$value) $this->$key = $value;
+		}
+	}
+
 	// Retourne un objet chargé depuis la base de données à partir de sont id
 	public static function one($id) {
 		$class = get_called_class();

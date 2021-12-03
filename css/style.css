@@ -79,6 +79,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -10;
 }
 
 .lettrine {
@@ -93,6 +94,12 @@ section {
     opacity: 0;
 }
 
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 h1 {
     font-size: 5rem;
 }
@@ -134,4 +141,8 @@ a {
 
 .description p {
     padding: 10px 0px;
+}
+
+#eeBoat img {
+    z-index:10;
 }
