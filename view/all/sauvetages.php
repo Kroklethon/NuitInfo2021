@@ -10,7 +10,6 @@
 </head>
 <body>
   <div class="main">
-    <?php include_once "../partials/header.php" ?>
     <section>
       <?php
       foreach($data as $sauvetage) {
@@ -18,7 +17,6 @@
       }
       ?>
     </section>
-    <?php include_once "../partials/footer.php" ?>
   </div>
 </body> 
 <script src="js/main.js"></script>
