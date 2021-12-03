@@ -1,8 +1,8 @@
 <?php
 
-$db_host = 'db_host';
-$db_user = 'db_user';
-$db_name = 'db_name';
+$db_host = 'db_host'; // Database host
+$db_user = 'db_user'; // Database user
+$db_name = 'db_name'; // Database name
 
 
 spl_autoload_register(function ($class) {
