@@ -13,7 +13,24 @@
     <section>
       <?php
       foreach($data as $sauvetage) {
-        echo "<p>".$sauvetage->id_sauvetage."</p>";
+        $cmdt = Sauveteur::one($sauvetage->id_commandant);
+        $cmdt = Personne::one($cmdt->id_personne);
+        $sous_cmdt = Sauveteur::one($sauvetage->id_sous_commandant);
+        $sous_cmdt = Sauveteur::one($sous_cmdt->id_personne);
+        echo "<h2>Sauvetage du ".$sauvetage->date_sauvetage."</h2>";
+        echo "<div style='margin:30px 0px' class='column'>";
+        echo "<div class='glass slider round'></div>";
+        echo "<div class='glass slider_img centered round blue'>Pas d'images :(</div>";
+        echo "</div>";
+        echo "
+        <div class='column'>
+          <div class='sauvetage_photo'></div>
+          <div class='sauvetage_desc'>
+            <p>Le capitaine :</p>
+            <a class='underlined'>en savoir +</a>
+          </div>
+          <h2 class='sauvetage_name'>{$cmdt->nom} PUTEUH</h2>
+        </div>";
       }
       ?>
     </section>
@@ -22,3 +39,4 @@
 <script src="theRescueQuest/ee.js"></script>
 <script src="js/main.js"></script>
 </html>
+
