@@ -12,6 +12,11 @@
   <div class="main">
     <?php include_once "../partials/header.php" ?>
     <section>
+      <?php
+      foreach($data as $sauvetage) {
+        echo "<p>".$sauvetage->id_sauvetage."</p>";
+      }
+      ?>
     </section>
     <?php include_once "../partials/footer.php" ?>
   </div>
