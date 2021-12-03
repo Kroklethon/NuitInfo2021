@@ -62,7 +62,7 @@ else if ((sessionStorage.getItem("rescueQuest") == 2) && (window.location.href =
 	eeBoat.setAttribute("width",0)
 	eeBoat.setAttribute("height",0)
 
-	svgBoat = getSvgBoat()
+	svgBoat = getSvgBoat2()
 	svgBoat.setAttribute("height", 400)
 	svgBoat.setAttribute("width", 400)
 	
@@ -70,7 +70,7 @@ else if ((sessionStorage.getItem("rescueQuest") == 2) && (window.location.href =
 	svgFloatingPeople = getSvgFloatingPeople()
 	eeBoat.appendChild(svgFloatingPeople)
 	svgFloatingPeople.onclick = function() {
-		this.setAttribute("src","theRescueQuest/savedPeople.svg")
+		this.setAttribute("src","savedPeople.svg")
 		sessionStorage.setItem("rescueQuest",3)
 		textToPrint = document.createElement("div")
 		textToPrint.innerHTML = "Vous avez recuperes les naufrages ! Ramenez les maintenant au <a href='" + sessionStorage.getItem("rescueQuestStart") + "'>port</a>.";
@@ -85,7 +85,7 @@ else if ((sessionStorage.getItem("rescueQuest") == 2) && (window.location.href.m
 	eeBoat.setAttribute("width",0)
 	eeBoat.setAttribute("height",0)
 
-	svgBoat = getSvgBoat()
+	svgBoat = getSvgBoat2()
 	svgBoat.setAttribute("height", 400)
 	svgBoat.setAttribute("width", 400)
 	
@@ -152,6 +152,15 @@ function getSvgBoat() {
 	return b
 }
 
+function getSvgBoat2() {
+	b = document.createElement("img")
+	b.setAttribute("src", "boat.svg")
+	b.setAttribute("height", 100)
+	b.setAttribute("width", 100)
+	b.style.background = '#9999FF'
+	return b
+}
+
 function getSvgPort() {
 	b = document.createElement("img")
 	b.setAttribute("src", "theRescueQuest/port.svg")
@@ -172,7 +181,7 @@ function getSvgBoatDistressed() {
 
 function getSvgFloatingPeople() {
 	b = document.createElement("img")
-	b.setAttribute("src", "theRescueQuest/floatingPeople.svg")
+	b.setAttribute("src", "floatingPeople.svg")
 	b.setAttribute("height", 100)
 	b.setAttribute("width", 100)
 	b.style.background = '#9999FF'
@@ -181,7 +190,7 @@ function getSvgFloatingPeople() {
 
 function getSvgWater() {
 	b = document.createElement("img")
-	b.setAttribute("src", "theRescueQuest/sea.svg")
+	b.setAttribute("src", "sea.svg")
 	b.setAttribute("height", 400)
 	b.setAttribute("width", 400)
 	b.style.background = '#9999FF'
