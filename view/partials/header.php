@@ -23,7 +23,7 @@
       <div class="dropdown">
         <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="?route=sauveteurs">SAUVETEURS</a></h2>
         <div class="dropdown_content hidden">
-          <p>Ajouter un sauveteur</p>
+          <a href="?route=showAddSauveteur"><p>Ajouter un sauveteur</p></a>
           <p>Ajouter un naufragé</p>
           <p>Ajouter un bateau</p>
         </div>
