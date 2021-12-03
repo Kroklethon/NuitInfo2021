@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/6701183f30.js" crossorigin="anonymous"></script>
-  <title>Sauveteur dunkerquois</title>
-</head>
-<body>
-  <div class="main">
-    <?php include_once "../partials/header.php" ?>
-    <section>
-      <div class="description">
-        <p><p class="lettrine">B</p>ienvenue sur le site des sauveteurs du dunkerquois</p>
-        <p>Ce site rend hommage aux femmes, hommes et enfants qui ont réalisé des actes de sauvetages en milieu aquatique</p>
-        <p>Ces sauveteurs, habitants du dunkerquois (de Bray-Dunes à Grand-Fort-Philippe), ont participé à plus de 900 sauvetages en mer et plus de 1100 sauvetages individuels. Œuvrant avec courage, abnégation et souvent au mépris du risque ils méritent amplement que leurs actes soient pérennisés</p>
-      </div>
-    </section>
-    <?php include_once "../partials/footer.php" ?>
-  </div>
-</body>
-<script src="js/main.js"></script>
-</html>
+<?php
+include_once "config.php";
+include_once "db.php";
+include_once "routes.php";
