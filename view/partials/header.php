@@ -16,7 +16,7 @@
       <div class="dropdown">
         <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="?route=sauvetages">SAUVETAGES</a></h2>
         <div class="dropdown_content hidden">
-          <p>Ajouter un sauvetage</p> 
+          <p><a href="?route=addSauvetage">Ajouter un sauvetage</a></p> 
           <p>Suivre un sauvetag</p> 
         </div>
       </div>
