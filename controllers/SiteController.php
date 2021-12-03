@@ -32,5 +32,11 @@ class SiteController {
 		include_once "view/single/cartes.php";
 		include_once "view/partials/footer.php";
 	}
+	public function afficheBot() {
+		$data = Sauvetage::all();
+		include_once "view/partials/header.php";
+		include_once "view/single/indexBot.php";
+		include_once "view/partials/footer.php";
+	}
 }
 
