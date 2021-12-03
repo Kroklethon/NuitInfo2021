@@ -13,14 +13,14 @@
     <header class="centered"><h1>Les sauveteurs dunkerquois</h1></header>
     <nav>
       <div class="dropdown">
-        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="sauvetages">SAUVETAGES</a></h2>
+        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="?route=sauvetages">SAUVETAGES</a></h2>
         <div class="dropdown_content hidden">
           <p>Ajouter un sauvetage</p> 
           <p>Suivre un sauvetag</p> 
         </div>
       </div>
       <div class="dropdown">
-        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="sauveteurs">SAUVETEURS</a></h2>
+        <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="?route=sauveteurs">SAUVETEURS</a></h2>
         <div class="dropdown_content hidden">
           <p>Ajouter un sauveteur</p>
           <p>Ajouter un naufragé</p>
