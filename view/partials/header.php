@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/6701183f30.js" crossorigin="anonymous"></script>
-  <title>Sauveteur dunkerquois</title>
+  <title>Sauveteurs de dunkerquois</title>
 </head>
 <body>
   <button id="theme-btn">Thème sombre</button>
   <div class="main">
-    <header class="centered"><a href="?route=home"><h1>Les sauveteurs dunkerquois</h1></a></header>
+    <header class="centered"><a href="?route=home"><h1>Les sauveteurs de dunkerquois</h1></a></header>
     <nav>
       <div class="dropdown">
         <h2><i class="dropdown_logo fas fa-chevron-right"></i><a href="?route=sauvetages">SAUVETAGES</a></h2>
