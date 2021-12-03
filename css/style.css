@@ -183,8 +183,7 @@ a {
 .sauvetage_photo {
     flex: 1;
     height: 100px;
-    margin: 0px 30px;
-    background-color: green;
+    margin: 10px 30px;
 }
 
 .sauvetage_desc {
@@ -200,4 +199,8 @@ a {
 
 .underlined {
     text-decoration: underline;
+}
+.small {
+    font-size: 0.5em;
+    margin-left: 20%;
 }

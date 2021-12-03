@@ -15,39 +15,74 @@
     </head>
     <body>
     <div id="map-form-container">
-        <div id="map" style="height: 50vh; width: 80vh;"></div>
-
+        <div id="map" style="height: 50vh; width: 80vh;">
+        </div>
         <div id="form-container">
-                <form action="action" method="post">
-                    <p>
-                        <label for="lat">Latitude</label>
-                        <input type="text" name="lat" id="lat" value="{{$lat}}">
-                    </p>
-                    <p>
-                        <label for="lng">Longitude</label>
-                        <input type="text" name="lng" id="lng" value="{{$lng}}">
-                    </p>
-                    <p>
-                        <label for="zoom">Zoom</label>
-                        <input type="text" name="zoom" id="zoom" value="{{$zoom}}">
-                    </p>
-                    <p>
-                        <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="nom" value="{{$nom}}">
-                    </p>
-                    <p>
-                        <label for="description">Description</label>
-                        <input type="text" name="description" id="description" value="{{$description}}">
-                    </p>
-                    <p>
-                        <label for="adresse">Adresse</label>
-                        <input type="text" name="adresse" id="adresse" value="{{$adresse}}">
-                    </p>
-                    <input type="submit" value="Envoyer">
-                </form>
-            </div>
+            <form action="action" method="post">
+                <p>
+                    <label for="bat_sauvetage">Bateau de rescousse</label>
+                    <select name="bat_sauvetage">
+                        <?php 
+                            foreach(Bateau::all() as $bat) {
+                                echo "<option name='bat_sauvetage' value='{$bat->id}'>{$bat->nom}</option>";
+                            }
+                        ?>
+                    </select>
+                </p>
+                <p>
+                    <label for="bat_sauve">Bateau naufragé</label>
+                    <select name="bat_sauve">
+                        <?php 
+                            foreach(Bateau::all() as $bat) {
+                                echo "<option name='bat_sauve' value='{$bat->id_bateau}'>{$bat->nom}</option>";
+                            }
+                        ?>
+                    </select>
+                </p>
+                <p>
+                    <label for="mort">Morts</label>
+                    <?php 
+                    foreach(Personne::all() as $pers) {
+                        echo "<p><input type='checkbox' name='mort' value='{$pers->id_personne}'>{$pers->nom}</p>";   
+                    }
+                    ?>
+                </p>
+                <p>
+                <label for="vivant">Morts</label>
+                    <?php 
+                    foreach(Personne::all() as $pers) {
+                        echo "<p><input type='checkbox' name='vivant' value='{$pers->id_personne}'>{$pers->nom}</p>";   
+                    }
+                    ?>
+                </p>
+                <p>
+                    <label for="id_commandant">Commandant :</label>
+                    <select name="id_commadant">
+                    <?php 
+                        foreach(Sauveteur::all() as $sauv) {
+                            $pers = Personne::one($sauv->$id_sauveteur);
+                            echo "<option name='id_commandant' value='{$sauv->id_sauveteur}'>{$pers->nom}</option>";
+                        }
+                    ?>
+                    </select>
+                </p>
+                <p>
+                <label for="id_sous_commandant">Sous-commandant :</label>
+                    <select name="id_sous_commandant">
+                    <?php 
+                        foreach(Sauveteur::all() as $sauv) {
+                            $pers = Personne::one($sauv->$id_sauveteur);
+                            echo "<option name='id_sous_commandant' value='{$sauv->id_sauveteur}'>{$pers->nom}</option>";
+                        }
+                    ?>
+                    </select>
+                </p>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
     </div>
-    </body>
+    <p class="small">Cliquer pour ajouter une étape, Suppr pour supprimer une étape, Ctrl pour passer en mode "retour"</p>
+</body>
 
     <script src="js/carte.js"></script>
 </html>
