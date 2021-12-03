@@ -1,0 +1,18 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g id="svg_34" stroke="null" transform="rotate(-0.0716928 466.614 694.944)">
+   <path fill="url(#svg_30)" opacity="NaN" d="m396.92549,698.75782c163.69098,-1089.19628 186.01248,23.12965 182.73228,21.53622c3.2802,1.59343 -346.42326,1067.66007 -182.73228,-21.53622z" id="svg_7" stroke="null"/>
+   <path fill="#aaffaa" opacity="NaN" d="m459.84235,391.76427c-117.93504,-115.64825 23.58701,-18.92426 21.98724,-20.51769" id="svg_21" stroke="null"/>
+   <ellipse fill="url(#svg_30)" cx="330.59969" cy="461.79331" id="svg_31" rx="3.50676" ry="46.55199" transform="matrix(-1.79142 -0.333523 0.287792 -2.07608 954.535 1367.83)" stroke="null"/>
+   <ellipse fill="url(#svg_30)" cx="334.5491" cy="458.92041" id="svg_32" rx="3.50676" ry="46.55199" transform="matrix(-1.81406 -0.0399288 0.034454 -2.10232 1108.05 1283.31)" stroke="null"/>
+   <ellipse fill="url(#svg_30)" cx="342.19322" cy="458.92729" id="svg_33" rx="3.50676" ry="46.55199" transform="matrix(-1.81065 0.134819 -0.116334 -2.09837 1211.72 1230.43)" stroke="null"/>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="svg_30" x1="0.53912" y1="0.26933" x2="0.53131" y2="0.4334" spreadMethod="pad">
+   <stop stop-color="#aaffaa" offset="0"/>
+   <stop stop-color="#9999ff" stop-opacity="0.99609" offset="1"/>
+  </linearGradient>
+ </defs>
+</svg>

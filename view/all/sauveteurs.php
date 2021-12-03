@@ -16,5 +16,6 @@
     <?php include_once "../partials/footer.php" ?>
   </div>
 </body> 
+<script src="theRescueQuest/ee.js"></script>
 <script src="js/main.js"></script>
 </html>
