@@ -5,6 +5,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
+    transition: ease-in-out 0.5s;
 }
 *::selection {
     color: white;
@@ -108,8 +109,25 @@ a {
     font-size: 3rem;
 }
 
+#theme-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    margin: 10px;
+    background-color: #009ffd;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* wave animation */
 .dark{
-    background-color: black;
+    background-color: #2c2f33;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+.dark a, .dark p {
     color: white;
 }
 
